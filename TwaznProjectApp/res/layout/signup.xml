@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/editText6"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff" >
+
+        <!-- Header Starts -->
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="fill_parent"
+            android:layout_height="70dip"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip" >
+
+            <!-- Logo Start -->
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="مستخدم جديد"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/SeaGreen" />
+
+            <!-- Logo Ends -->
+        </LinearLayout>
+        <!-- Header Ends -->
+        <!-- login form start -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/header"
+            android:layout_marginTop="20dip"
+            android:orientation="vertical"
+            android:padding="10dip" >
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dip"
+                android:gravity="right"
+                android:hint="اسم المستخدم" 
+                android:singleLine="true"/>
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="اسم العرض"
+                android:inputType="textPersonName" 
+                                android:gravity="right" 
+                android:layout_marginTop="7dip"
+                />
+
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="البريد الإلكتروني"
+                android:inputType="textEmailAddress" 
+                                android:gravity="right" 
+                android:layout_marginTop="7dip"
+                />
+
+            <EditText
+                android:id="@+id/editText4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="كلمة المرور"
+                android:inputType="textPassword" 
+                                android:gravity="right" 
+                android:layout_marginTop="7dip"
+                />
+
+            
+            <EditText
+                android:id="@+id/editText5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="إعادة كلمة المرور"
+                android:inputType="textPassword"
+                                android:gravity="right" 
+                android:layout_marginTop="7dip"
+                 />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Spinner
+                    android:id="@+id/spinner1"
+                    android:layout_width="200dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="top|left"
+                    android:layout_marginTop="7dip"
+                    android:entries="@array/weight_mesures"
+                    android:gravity="right" />
+
+                <EditText
+                    android:id="@+id/registerWeight"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|right"
+                    android:layout_marginTop="7dip"
+                    android:gravity="right"
+                    android:hint="الوزن الحالي"
+                    android:inputType="number" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Spinner
+                    android:id="@+id/spinner2"
+                    android:layout_width="200dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="top|left"
+                    android:layout_marginTop="7dip"
+                    android:entries="@array/height_mesures"
+                    android:gravity="right" />
+
+                <EditText
+                    android:id="@+id/editText8"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|right"
+                    android:layout_marginTop="7dip"
+                    android:gravity="right"
+                    android:hint="الطول"
+                    android:inputType="number" />
+
+            </LinearLayout>
+
+                
+
+                                            <EditText
+                                                android:id="@+id/editText7"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:inputType="date" 
+                                                android:gravity="right"
+                                                android:hint="تاريخ الميلاد"
+                                                android:layout_marginTop="7dip"
+                                                android:focusable="true" />"
+
+                                            <Spinner
+                                                android:id="@+id/spinner3"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="7dip"
+                                                android:entries="@array/sex"
+                                                android:gravity="right" />
+
+                                <!--  Error message -->
+        <TextView android:id="@+id/register_error"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#e30000"
+                    android:padding="10dip"
+                    android:textStyle="bold"/>
+                                            
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:text="تسجيل" 
+                android:onClick="RegisterUser"
+                />
+         </LinearLayout>
+        <!-- Login Form Ends -->
+        </RelativeLayout>
+        </ScrollView>  

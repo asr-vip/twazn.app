@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" style="@style/ActivityBarStyle" android:id="@+id/ActivityBar"
+	android:layout_alignParentBottom="true"    android:layout_height="?android:attr/actionBarSize"     >
+	
+	<ImageButton
+		style="@style/ActivityButtonStyle"
+		android:id="@+id/navProfile"
+		android:src="@drawable/user"
+        android:layout_height="fill_parent"
+        android:background="@color/MediumSeaGreen"
+
+		/>
+
+	<ImageButton
+		style="@style/ActivityButtonStyle"
+		android:id="@+id/navNotification"
+		android:src="@drawable/megaphone"
+        android:layout_height="fill_parent"
+        android:background="@color/MediumSeaGreen"
+        />
+
+	<ImageButton
+		style="@style/ActivityButtonStyle"
+		android:id="@+id/navTwazn"
+		android:src="@drawable/swim"
+        android:layout_height="fill_parent"
+        android:background="@color/MediumSeaGreen"
+		/>
+
+	<ImageButton
+		style="@style/ActivityButtonStyle"
+		android:id="@+id/navTimeline"
+		android:src="@drawable/house"
+        android:layout_height="fill_parent"
+        android:background="@color/MediumSeaGreen"
+		/>
+
+		
+</LinearLayout>
+

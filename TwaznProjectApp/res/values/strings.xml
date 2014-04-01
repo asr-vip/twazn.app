@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, FreeFlight_TopLevelActivity!</string>
+    <string name="app_name">FreeFlight_TopLevel</string>
+
+    <string-array name="weight_mesures">
+        <item>كجم</item>
+        <item>رطل</item>
+    </string-array>
+
+    <string-array name="sex">
+        <item>ذكر</item>
+        <item>أنثى</item>
+    </string-array>
+
+    <string-array name="height_mesures">
+        <item>سم</item>
+        <item>انش</item>
+    </string-array>
+    
+</resources>

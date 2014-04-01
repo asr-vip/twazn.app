@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.twazn.app"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="11" />
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"  >
+        <activity
+            android:name="com.twazn.app.LaunchActivity"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.twazn.app.ProfileActivity" android:label="الملف الشخصي" android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity android:name="com.twazn.app.NotificationActivity" android:label="التنبيهات" android:theme="@android:style/Theme.Light.NoTitleBar" />                
+        <activity android:name="com.twazn.app.TwaznActivity" android:label="توازن" android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity android:name="com.twazn.app.TimeLineActivity" android:label="الرئيسية" android:theme="@android:style/Theme.Light.NoTitleBar" />
+               
+         <!--  Entry for RegisterActivity.class -->
+        <activity android:name="com.twazn.app.SignupActivity" android:label="مستخدم جديد"  android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        <activity android:name="com.twazn.app.SigninActivity" android:label="تسجيل الدخول"  android:theme="@android:style/Theme.Light.NoTitleBar"/>
+
+        
+    </application>
+
+</manifest>
